@@ -1,0 +1,13 @@
+{
+  "name": "cc-node",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "mamitiana_rakotoarisoa@outlook.com",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
