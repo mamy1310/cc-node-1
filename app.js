@@ -4,6 +4,7 @@ import { PrismaMariaDb } from "@prisma/adapter-mariadb";
 import router from "./app/routes/index.js";
 
 const app = express();
+app.use(express.json());
 
 const databaseUrl = new URL(process.env.DATABASE_URL);
 
