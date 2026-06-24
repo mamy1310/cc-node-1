@@ -36,8 +36,8 @@ export const login = async (req, res) => {
 			return res.status(401).json({ message: "Invalid password" });
 		}
 
-		const token = await signToken({ id: user.id }, process.env.JWT_SECRET, {
-			expiresIn: "24h",
+		const token = await signToken({ id: user.id }, process.env.TOKEN_SECRET, {
+			expiresIn: process.env.JWT_EXPIRATION,
 		});
 
 		res.json({ user, token });
