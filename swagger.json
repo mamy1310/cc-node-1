@@ -241,8 +241,7 @@
               "schema": {
                 "type": "object",
                 "required": [
-                  "datas",
-                  "image"
+                  "datas"
                 ],
                 "properties": {
                   "datas": {
