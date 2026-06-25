@@ -1,9 +1,11 @@
 import express from 'express';
+import cors from 'cors';
 import { PrismaClient } from "./generated/prisma/client";
 import { PrismaMariaDb } from "@prisma/adapter-mariadb";
 import router from "./app/routes/index.js";
 
 const app = express();
+app.use(cors({ origin: 'http://localhost:8080' }));
 app.use(express.json());
 app.use('/uploads', express.static('uploads'));
 
